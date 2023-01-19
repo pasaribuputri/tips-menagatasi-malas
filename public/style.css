@@ -1,0 +1,21 @@
+*{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+p{
+    color: black;
+
+}
+
+h1{
+    text-align: center;
+}
+
+h3{
+    font-style: italic;
+}
+
+.container{
+    background-color: rgb(221, 212, 202);
+}

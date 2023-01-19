@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips dan Trik Giat Belajar</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Tips dan Cara Mengusir Rasa Malas Belajar </h1>
+    </div>
+
+    <script>
+        fetch("/api/tips")
+        .then((response)=>response.json())
+        .then((res)=>{
+            console.log(res);
+            const a = document.createElement("h3")
+            a.innerHTML = res.tips;
+            const p = document.createElement("p")
+            p.innerHTML = res.tips1;
+            const p1 = document.createElement("p")
+            p1.innerHTML = res.tips2;
+            const p2 = document.createElement("p")
+            p2.innerHTML = res.tips3;
+            const p3 = document.createElement("p")
+            p3.innerHTML = res.tips4;
+            const p4 = document.createElement("p")
+            p4.innerHTML = res.tips5;
+            const p5 = document.createElement("p")
+            p5.innerHTML = res.tips6;
+            const p6 = document.createElement("p")
+            p6.innerHTML = res.kesimpulan;
+
+
+            const ctr = document.querySelector(".container")
+            ctr.appendChild(a);
+            ctr.appendChild(p);
+            ctr.appendChild(p1);
+            ctr.appendChild(p2);
+            ctr.appendChild(p3);
+            ctr.appendChild(p4);
+            ctr.appendChild(p5);
+            ctr.appendChild(p6);
+        })
+    </script>
+</body>
+</html>
